@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RTL Support */
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+/* Ensure proper text alignment for RTL languages */
+.rtl input, 
+.rtl label, 
+.rtl button {
+  text-align: right;
+}
+
+.rtl .flex-row {
+  flex-direction: row-reverse;
+}
